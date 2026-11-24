@@ -20,7 +20,7 @@ SCALA_VERSION="${SCALA_VERSION:-2.13}"
 KAFKA_LINK="/opt/kafka"
 
 # Optional AIV RPM Download URL & Package Selection
-DEFAULT_AIV_DOWNLOAD_URL="https://github.com/aiv-code/packages/releases/download/rpm%2F7.0.27-0/aiv-7.0.27-0.el9.noarch.rpm"
+DEFAULT_AIV_DOWNLOAD_URL="https://github.com/aiv-code/packages/releases/download/rpm%2F7.0.29-0/aiv-7.0.29-0.el9.noarch.rpm"
 AIV_DOWNLOAD_URL="${AIV_DOWNLOAD_URL:-$DEFAULT_AIV_DOWNLOAD_URL}"
 EXPLICIT_URL="no"
 EXPLICIT_RPM=""
