@@ -21,6 +21,27 @@ Welcome to **Active Intelligence Visualization (AIV)** — a powerful data visua
 
 ---
 
+## Repository Structure
+
+```
+aiv-scripts/
+├── README.md
+├── aiv-base/
+│   └── aiv-base-setup.sh            # Core AIV platform installer (Java, PostgreSQL, Kafka, Nginx, RPM)
+├── aiv-ai/
+│   └── aiv-ai-install-linux.sh      # AIV AI module installer for Linux
+└── aiv-log-consolidator/
+    └── aiv-log-consolidator.py       # Multi-server log consolidator with Web UI
+```
+
+| Folder | Description |
+|--------|-------------|
+| **aiv-base/** | Enterprise bare-metal deployer for AIV — handles Java, PostgreSQL, Apache Kafka, Nginx, firewall, and the AIV RPM on RHEL / Rocky / Alma Linux (8, 9, 10). Supports single-node and clustered deployments. |
+| **aiv-ai/** | Installer script for the AIV AI module on Linux environments. |
+| **aiv-log-consolidator/** | Pure-Python log consolidator that merges logs from multiple AIV cluster nodes into a single time-ordered view, with a built-in Web UI (port 8088) for live streaming, trace inspection, and export. |
+
+---
+
 ## System Requirements
 
 The following are the recommended hardware and software requirements for installing and running AIV. These requirements apply to both **on-premise** and **cloud-based** deployments.
